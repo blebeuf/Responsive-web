@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+body, html {
+	height:auto;
+	width:auto;
+	margin: 0;
+	padding: 0;
+}
+
+video#fullscreen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+	background: url(assets/poster.png) no-repeat;
+	background-size: cover;
+}
+
+p {
+    color: yellow;
+	font-family: verdana;
+	text-shadow: 2px 2px 2px #000;
+}
+
+p1 {
+    color: red;
+	font-family: verdana;
+	opacity: 0.55;
+	text-shadow: 1px 1px 1px #FFFFF0;
+	font-size: 125%;
+}
+
+.imageMap {
+position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: 100;
+	height: 100;
+	z-index: 1;
+
+}
+
+#thumbs {
+  width: 940px;
+  margin-top:90px;
+  margin-left: auto; 
+  margin-right: auto;
+
+}
+
+#tv {
+	width:222px;
+	height:110px;
+	position:absolute;
+	top:490px;
+	left:308px;
+}
+
+#window {
+	width: 255px;
+	height: 320px;
+	position: absolute;
+	top: 310px;
+	right: 610px;
+}
+
+.link_wrap {
+	display:block;
+}
+
+#destination {
+	position:absolute;
+	top:960px;
+	left:659px;
+	text-align:center;
+	font-size:36px;
+	color:#f00;	
+	width:602px;
+	height:100px;
+}
+
+
+@media screen and (max-width: 1366px) {
+body{
+	width: 1336px;
+	margin:0 auto; 
+	
+}
+
+}@media screen and (min-width: 1920px) {
+body{
+	width: 1920px;
+	margin:0 auto; 

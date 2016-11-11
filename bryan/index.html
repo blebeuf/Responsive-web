@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<link rel="stylesheet" href="style.css">
+<script>
+	function setDestination(des) {
+		document.getElementById("destination").innerHTML = des;
+	}
+	
+	function clearDestination() {
+		document.getElementById("destination").innerHTML = "";
+	}
+</script>
+</head>
+<body>
+	<video poster="assets/poster.png" autoplay loop id="fullscreen">
+		<source src="assets/WEB_TEST.webm" type="video/webm">
+		<source src="assets/WEB_TEST.mp4" type="video/mp4"> 
+    </source>
+    </source>
+    </video>
+    
+    
+	<a href="video.html" class="link_wrap" onmouseover="setDestination('<img src=\'assets/video.png\'>')" onmouseout="clearDestination()"><div id="tv"></div></a>
+    <a href="animation.html" class="link_wrap" onmouseover="setDestination('<img src=\'assets/animation.png\'>')" onmouseout="clearDestination()"><div id="window"></div></a>
+    <a href="javascript:void(0)" class="link_wrap" onmouseover="setDestination('Compass-CHANGEME')" onmouseout="clearDestination()"><div id="compass"></div></a>
+    
+    <div id="destination"></div>
+    
+    <!--
+    <img src="assets/poster1.png" usemap="#menu" alt="" border="0">
+    <map name="menu">
+        <area shape="rect" coords="310,490,525,590" href="video.html">
+        <area shape="rect" coords="880,528,940,575">
+    </map>
+    -->
+</body>
+</html>
